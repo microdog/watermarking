@@ -35,4 +35,4 @@ Options:
 
 ## TODO
 
-[ ] Query font by name or ship a bundled font
+- [ ] Query font by name or ship a bundled font
