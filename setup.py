@@ -101,7 +101,8 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages(exclude=['tests', '*.tests', '*.tests.*', 'tests.*']),
+    package_dir={'': 'src'},
+    packages=find_packages(where='src', exclude=['tests', '*.tests', '*.tests.*', 'tests.*']),
     # If your package is a single module, use this instead of 'packages':
     # py_modules=['mypackage'],
     entry_points={'console_scripts': ['watermarking=watermarking:cmd.watermark']},
